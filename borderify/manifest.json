@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Borderify",
+    "version": "1.0",
+
+    "description": "Adds Mini staring at you from her dirty old spaceship litterbox.",
+
+    "icons": {
+        "48": "icons/border-48.png",
+        "128": "icons/Mini.jpg"
+    },
+
+    "content_scripts": [
+        {
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["minify.js"]
+        }
+    ],
+
+    "web_accessible_resources": [
+        {
+          "resources": ["images/Mini.jpg"],
+          "matches": ["<all_urls>"]
+        }
+    ]
+}
+
+  
